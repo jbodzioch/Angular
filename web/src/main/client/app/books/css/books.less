@@ -1,0 +1,27 @@
+@tableFontColor: #FF0000;
+@buttonColor: fadeout(#00FF00, 90%);
+@tableOddColor: darken(#00FFFF, 5%);
+@tableEvenColor: darken(#0000FF, 5%);
+
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+table tr:nth-child(odd) {
+  background-color: @tableOddColor;
+}
+
+table tr:nth-child(even) {
+  background-color: @tableEvenColor;
+}
+
+button {
+    background-color: @buttonColor;
+}
+
+body {
+ 	color: @tableFontColor;
+}
